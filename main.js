@@ -103,6 +103,7 @@ const SERVICES = [
     name: 'Lectura de Tarot',
     desc: 'Consulta online vía Instagram. Lectura de 5 cartas con interpretación personalizada. Se entrega en texto o audio.',
     price: 15000,
+    image: 'images/tarot.png',
     emoji: '🃏',
     priceLabel: '$15.000'
   },
@@ -111,6 +112,7 @@ const SERVICES = [
     name: 'Ritual a Distancia',
     desc: 'Ritual realizado según tu consulta: amor, protección, corte de lazos, abundancia. Incluye foto del proceso y cierre.',
     price: 25000,
+    image: 'images/ritual.png',
     emoji: '🔮',
     priceLabel: '$25.000'
   },
@@ -119,6 +121,7 @@ const SERVICES = [
     name: 'Limpieza Energética',
     desc: 'Limpieza de espacio o persona realizada a distancia. Incluye diagnóstico previo y reporte posterior.',
     price: 20000,
+    image: 'images/limpieza.png',
     emoji: '✨',
     priceLabel: '$20.000'
   }
@@ -189,16 +192,26 @@ function renderServices() {
 
   grid.innerHTML = SERVICES.map(s => `
     <article class="service-card fade-in" role="listitem">
-      <div class="service-icon" aria-hidden="true">${s.emoji}</div>
-      <h3 class="service-name">${s.name}</h3>
-      <p class="service-desc">${s.desc}</p>
-      <div class="service-price">${s.priceLabel}</div>
-      <button
-        class="btn-ghost"
-        onclick="addServiceToCart('${s.id}')"
-        style="width:100%"
-        aria-label="Solicitar ${s.name}"
-      >Solicitar</button>
+      <div class="service-img-wrapper">
+        <img
+          src="${s.image}"
+          alt="${s.name}"
+          class="service-img"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+        />
+        <div class="service-img-placeholder" aria-hidden="true" style="display:none;">${s.emoji}</div>
+      </div>
+      <div class="service-body">
+        <h3 class="service-name">${s.name}</h3>
+        <p class="service-desc">${s.desc}</p>
+        <div class="service-price">${s.priceLabel}</div>
+        <button
+          class="btn-ghost"
+          onclick="addServiceToCart('${s.id}')"
+          style="width:100%"
+          aria-label="Solicitar ${s.name}"
+        >Solicitar</button>
+      </div>
     </article>
   `).join('');
 }
