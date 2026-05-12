@@ -61,7 +61,7 @@ const PRODUCTS = [
     category: 'Insumos',
     desc: 'Mezcla de plantas nativas secas para rituales de limpieza y protección.',
     price: 5500,
-    image: 'images/hierbas-bosque.png',
+    image: 'images/atado-hierbas.png',
     emoji: '🌿',
     stock: 'available'
   },
