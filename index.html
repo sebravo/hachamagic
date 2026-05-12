@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ─── SEO PRIMARIO ─── -->
+  <title>Hacha — Insumos de magia y brujería verde | Panguipulli, Chile</title>
+  <meta name="description" content="Insumos artesanales de magia y brujería verde elaborados desde el bosque de Panguipulli. Velas, sales de bruja, huesos, hierbas nativas y piezas únicas. Rituales online y lectura de tarot. Despacho a todo Chile." />
+  <meta name="keywords" content="brujería, magia verde, insumos de brujería, velas artesanales, sal de bruja, huesos rituales, tarot online, ritual a distancia, Panguipulli, Chile, tienda brujería, hierbas nativas" />
+  <meta name="author" content="Hacha" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.hachamagic.cl/" />
+
+  <!-- ─── OPEN GRAPH (Facebook, WhatsApp, etc.) ─── -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://www.hachamagic.cl/" />
+  <meta property="og:title"       content="Hacha — Insumos de magia y brujería verde" />
+  <meta property="og:description" content="Insumos artesanales desde el bosque de Panguipulli. Velas, sales, huesos, hierbas nativas. Rituales online y lectura de tarot. Despacho a todo Chile." />
+  <meta property="og:image"       content="https://www.hacha.cl/og-image.jpg" />
+  <meta property="og:image:alt"   content="Hacha — Brujería verde desde Panguipulli" />
+  <meta property="og:locale"      content="es_CL" />
+  <meta property="og:site_name"   content="Hacha" />
+
+  <!-- ─── TWITTER CARD ─── -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Hacha — Insumos de magia y brujería verde" />
+  <meta name="twitter:description" content="Insumos artesanales desde el bosque de Panguipulli. Velas, sales, huesos, hierbas nativas. Rituales y tarot online." />
+  <meta name="twitter:image"       content="https://www.hacha.cl/og-image.jpg" />
+
+  <!-- ─── DATOS ESTRUCTURADOS (Schema.org) ─── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Store",
+    "name": "Hacha",
+    "description": "Tienda de insumos artesanales de magia y brujería verde elaborados desde el bosque de Panguipulli, Chile.",
+    "url": "https://www.hacha.cl",
+    "logo": "https://www.hacha.cl/images/logo-hacha.svg",
+    "image": "https://www.hacha.cl/og-image.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Panguipulli",
+      "addressRegion": "Los Ríos",
+      "addressCountry": "CL"
+    },
+    "sameAs": [
+      "https://www.instagram.com/hacha.magic"
+    ],
+    "currenciesAccepted": "CLP",
+    "paymentAccepted": "Transferencia bancaria",
+    "priceRange": "$$",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Insumos de magia y brujería",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Velas artesanales de bruja" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Sal de bruja" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Huesos rituales" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Hierbas del bosque nativo" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Lectura de tarot online" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ritual a distancia" } }
+      ]
+    }
+  }
+  </script>
+
+  <!-- ─── FAVICON ─── -->
+  <link rel="icon"             href="favicon.ico" />
+  <link rel="icon"             href="favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+
+  <!-- ─── FUENTES ─── -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+
+  <!-- ─── ESTILOS ─── -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <a href="#inicio" class="logo-header" aria-label="Hacha - Inicio">
+      <img src="images/logo-hacha.svg" alt="Hacha" id="header-logo" width="44" height="44" />
+      <span>Hacha</span>
+    </a>
+    <nav aria-label="Navegación principal">
+      <a href="#tienda">Tienda</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#sobre">Sobre Hacha</a>
+      <a href="#envios">Envíos</a>
+    </nav>
+    <button class="cart-btn" onclick="toggleCart()" aria-label="Ver carro de compras">
+      <span>Carro</span>
+      <span class="cart-count" id="cart-count" aria-live="polite">0</span>
+    </button>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio" aria-label="Inicio">
+    <img src="images/logo-hacha.svg" alt="Hacha — Brujería verde desde Panguipulli" class="hero-logo" id="hero-logo" width="180" height="180" />
+    <h1>Hacha</h1>
+    <p class="hero-tagline">Insumos de magia y brujería verde — desde el bosque de Panguipulli</p>
+    <div class="hero-ctas">
+      <a href="#tienda" class="btn-primary">Ver tienda</a>
+      <a href="#servicios" class="btn-ghost">Servicios</a>
+    </div>
+  </section>
+
+  <!-- TIENDA -->
+  <section id="tienda" aria-labelledby="tienda-titulo">
+    <div class="section-header fade-in">
+      <span class="section-label">Insumos</span>
+      <h2 class="section-title" id="tienda-titulo">Tienda</h2>
+      <div class="section-divider" aria-hidden="true"></div>
+    </div>
+    <div class="products-grid" id="products-grid" role="list"></div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section class="services-section" id="servicios" aria-labelledby="servicios-titulo">
+    <div class="services-inner">
+      <div class="section-header fade-in">
+        <span class="section-label">Online</span>
+        <h2 class="section-title" id="servicios-titulo">Servicios</h2>
+        <div class="section-divider" aria-hidden="true"></div>
+      </div>
+      <div class="services-grid" id="services-grid" role="list"></div>
+    </div>
+  </section>
+
+  <!-- SOBRE HACHA -->
+  <section class="sobre-section" id="sobre" aria-labelledby="sobre-titulo">
+    <div class="sobre-inner">
+      <div class="section-header fade-in">
+        <span class="section-label">El origen</span>
+        <h2 class="section-title" id="sobre-titulo">Sobre Hacha</h2>
+        <div class="section-divider" aria-hidden="true"></div>
+      </div>
+      <div class="sobre-body">
+        <div class="sobre-text fade-in">
+          <p>
+            <strong>Hacha nació del bosque.</strong> De la recolección lenta, del conocimiento heredado
+            y de la convicción de que la magia no pertenece a ningún templo ni institución —
+            pertenece a quien la practica con honestidad.
+          </p>
+          <p>
+            Trabajamos desde la tradición de la <strong>magia del caos</strong>: una práctica que no impone
+            dogmas ni dioses fijos. El caos no es desorden — es la fuerza anterior a toda forma,
+            la materia prima de lo posible. Cada ritual, cada insumo, cada lectura parte de ahí.
+          </p>
+          <p>
+            Nuestro trabajo <strong>no está orientado al daño</strong>. La brujería verde que practicamos
+            trabaja con la naturaleza, con los ciclos, con la intención. Lo que se siembra vuelve.
+            Eso lo tomamos en serio.
+          </p>
+        </div>
+        <div class="sobre-tribute fade-in">
+          <span class="tribute-label">En memoria</span>
+          <div class="tribute-name">Peter J. Carroll</div>
+          <div class="tribute-dates">1953 — 22 de abril de 2026</div>
+          <p>
+            Ocultista inglés, cofundador de los Illuminates of Thanateros y padre de la magia del caos moderna.
+            Su obra <em>Liber Null &amp; Psychonaut</em> cambió para siempre la forma en que el mundo entiende
+            la magia como práctica filosófica y experimental.
+          </p>
+          <p>
+            Carroll demostró que la magia no requiere fe ciega — requiere voluntad, atención y la disposición
+            a trabajar con la incertidumbre como aliada. Esa es la base de lo que hacemos aquí.
+          </p>
+          <p style="font-style:normal; font-size:0.85rem; color: var(--accent-dim);">
+            "El caos es la unidad que subyace a toda diversidad."
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENVÍOS -->
+  <section class="envios-section" id="envios" aria-labelledby="envios-titulo">
+    <div class="envios-box fade-in">
+      <h2 class="section-title" id="envios-titulo" style="margin-bottom:16px;">Despacho a todo Chile</h2>
+      <p>
+        Despachamos desde Panguipulli, Región de Los Ríos.<br />
+        Los productos únicos se empacan con cuidado ritual antes del envío.
+      </p>
+      <div class="couriers" aria-label="Servicios de courier disponibles">
+        <span class="courier-tag">Blue Express</span>
+        <span class="courier-tag">Starken</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <img src="images/logo-hacha.svg" alt="Hacha" class="footer-logo" width="52" height="52" />
+    <p class="footer-tagline">Caos.</p>
+    <nav class="footer-links" aria-label="Links secundarios">
+      <a href="https://www.instagram.com/hacha.magic" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a href="#tienda">Tienda</a>
+      <a href="#servicios">Servicios</a>
+    </nav>
+    <p class="footer-copy">© 2026 Hacha — Panguipulli, Chile</p>
+  </footer>
+
+  <!-- CART DRAWER -->
+  <div class="cart-overlay" id="cart-overlay" onclick="toggleCart()" aria-hidden="true"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Carro de compras">
+    <div class="cart-header">
+      <h2>Tu pedido</h2>
+      <button class="close-btn" onclick="toggleCart()" aria-label="Cerrar carro">×</button>
+    </div>
+    <div class="cart-items" id="cart-items" aria-live="polite">
+      <p class="cart-empty">Tu carro está vacío.</p>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total</span>
+        <span class="total-amount" id="cart-total">$0</span>
+      </div>
+      <button class="btn-checkout" id="checkout-btn" onclick="openCheckout()" disabled>
+        Hacer pedido
+      </button>
+    </div>
+  </aside>
+
+  <!-- CHECKOUT MODAL -->
+  <div class="modal-overlay" id="checkout-modal" role="dialog" aria-modal="true" aria-labelledby="modal-titulo">
+    <div class="modal">
+      <button class="modal-close" onclick="closeCheckout()" aria-label="Cerrar">×</button>
+      <h2 id="modal-titulo">Datos del pedido</h2>
+      <p class="modal-subtitle">Te contactaremos por Instagram para coordinar el pago y el envío.</p>
+
+      <div class="order-summary" id="order-summary"></div>
+
+      <div class="form-group">
+        <label for="f-nombre">Nombre completo</label>
+        <input type="text" id="f-nombre" name="nombre" placeholder="Tu nombre" autocomplete="name" />
+      </div>
+      <div class="form-group">
+        <label for="f-ciudad">Ciudad / Comuna</label>
+        <input type="text" id="f-ciudad" name="ciudad" placeholder="¿A dónde despachamos?" autocomplete="address-level2" />
+      </div>
+      <div class="form-group">
+        <label for="f-ig">Instagram (para contactarte)</label>
+        <input type="text" id="f-ig" name="instagram" placeholder="@tu_instagram" />
+      </div>
+      <div class="form-group">
+        <label for="f-courier">Courier preferido</label>
+        <select id="f-courier" name="courier">
+          <option value="">Selecciona</option>
+          <option value="Blue Express">Blue Express</option>
+          <option value="Starken">Starken</option>
+          <option value="Sin preferencia">Sin preferencia</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="f-notas">Notas adicionales (opcional)</label>
+        <textarea id="f-notas" name="notas" placeholder="Algún comentario o consulta..."></textarea>
+      </div>
+      <p class="shipping-note">* El costo de envío se coordina al momento del contacto.</p>
+
+      <button class="btn-send" onclick="sendToInstagram()">
+        Enviar pedido por Instagram →
+      </button>
+      <p class="ig-note">Se abrirá un DM a @hacha.magic con el detalle de tu pedido.</p>
+    </div>
+  </div>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- JAVASCRIPT -->
+  <script src="main.js"></script>
+
+</body>
+</html>
